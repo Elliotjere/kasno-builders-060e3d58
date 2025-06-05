@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 const projectDetails = {
-  1: {
+  "1": {
     title: "Modern Office Complex",
     category: "Commercial",
     description: "A state-of-the-art office complex featuring sustainable design and modern amenities.",
@@ -47,7 +47,7 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   
-  const project = projectDetails[id as keyof typeof projectDetails];
+  const project = id ? projectDetails[id as keyof typeof projectDetails] : null;
 
   if (!project) {
     return (
