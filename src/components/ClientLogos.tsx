@@ -1,28 +1,36 @@
 
 const clientLogos = [
   {
-    name: "TechCorp",
-    logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-  },
-  {
-    name: "BuildMax",
-    logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-  },
-  {
-    name: "Urban Development",
+    name: "Ministry of Works",
     logo: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
   },
   {
-    name: "City Council",
-    logo: "https://images.unsplash.com/photo-1560472355-b83f0fe1a837?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
-  },
-  {
-    name: "Metro Group",
+    name: "Tanzania Roads Authority",
     logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
   },
   {
-    name: "Elite Properties",
+    name: "Dar es Salaam City Council",
     logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    name: "Ministry of Health",
+    logo: "https://images.unsplash.com/photo-1560472355-b83f0fe1a837?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    name: "Tanzania Building Agency",
+    logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    name: "Ministry of Education",
+    logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    name: "Tanzania Ports Authority",
+    logo: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    name: "Regional Development Council",
+    logo: "https://images.unsplash.com/photo-1560472355-b83f0fe1a837?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
   }
 ];
 
@@ -35,7 +43,7 @@ const ClientLogos = () => {
             Trusted by <span className="text-red-600">Leading Organizations</span>
           </h2>
           <p className="text-xl text-gray-600">
-            We're proud to work with industry leaders and forward-thinking companies
+            We're proud to work with Tanzania's government institutions and forward-thinking organizations
           </p>
         </div>
         

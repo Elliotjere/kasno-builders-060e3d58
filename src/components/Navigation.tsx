@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,11 +21,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/569b53d3-0edb-4e79-9261-643222feee26.png" 
-              alt="Kasno Builders" 
-              className="h-12 w-auto"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/569b53d3-0edb-4e79-9261-643222feee26.png" 
+                alt="Kasno Builders" 
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
           
           {/* Desktop Menu */}
@@ -58,7 +61,7 @@ const Navigation = () => {
             </div>
             
             <a href="#about" className="text-blue-900 hover:text-red-600 transition-colors font-medium">About</a>
-            <a href="#portfolio" className="text-blue-900 hover:text-red-600 transition-colors font-medium">Portfolio</a>
+            <Link to="/portfolio" className="text-blue-900 hover:text-red-600 transition-colors font-medium">Portfolio</Link>
             <a href="#contact" className="text-blue-900 hover:text-red-600 transition-colors font-medium">Contact</a>
             <button className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium">
               Get Quote
@@ -83,7 +86,7 @@ const Navigation = () => {
               <a href="#home" className="block px-3 py-2 text-blue-900 hover:text-red-600">Home</a>
               <a href="#services" className="block px-3 py-2 text-blue-900 hover:text-red-600">Services</a>
               <a href="#about" className="block px-3 py-2 text-blue-900 hover:text-red-600">About</a>
-              <a href="#portfolio" className="block px-3 py-2 text-blue-900 hover:text-red-600">Portfolio</a>
+              <Link to="/portfolio" className="block px-3 py-2 text-blue-900 hover:text-red-600">Portfolio</Link>
               <a href="#contact" className="block px-3 py-2 text-blue-900 hover:text-red-600">Contact</a>
               <button className="w-full text-left bg-red-600 text-white px-3 py-2 rounded-lg hover:bg-red-700 transition-colors mt-2">
                 Get Quote
