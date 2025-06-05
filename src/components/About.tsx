@@ -1,5 +1,4 @@
-
-import { CheckCircle, Users, Award, Clock } from "lucide-react";
+import { CheckCircle, Users, Award, Clock, Building } from "lucide-react";
 
 const stats = [
   { icon: Building, number: "500+", label: "Projects Completed" },
