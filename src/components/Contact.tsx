@@ -37,7 +37,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
@@ -148,6 +148,26 @@ const Contact = () => {
                 <Send size={20} />
               </button>
             </form>
+          </div>
+        </div>
+
+        {/* Map Section */}
+        <div className="bg-white rounded-lg overflow-hidden shadow-xl">
+          <div className="p-6 bg-gray-50 border-b">
+            <h3 className="text-2xl font-bold text-blue-900">Find Us</h3>
+            <p className="text-gray-600">Visit our office for in-person consultations</p>
+          </div>
+          <div className="h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7425688705024!2d32.5825197!3d0.3475964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f0e7c5555%3A0x7894d54321abc!2sKampala%2C%20Uganda!5e0!3m2!1sen!2s!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Kasno Builders Location"
+            ></iframe>
           </div>
         </div>
       </div>

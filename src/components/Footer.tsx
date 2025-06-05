@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/569b53d3-0edb-4e79-9261-643222feee26.png" 
                 alt="Kasno Builders" 
-                className="h-14 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
@@ -36,6 +36,7 @@ const Footer = () => {
               <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
+              <li><a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
