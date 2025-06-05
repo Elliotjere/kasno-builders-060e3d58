@@ -23,7 +23,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/569b53d3-0edb-4e79-9261-643222feee26.png" 
               alt="Kasno Builders" 
-              className="h-18 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           
