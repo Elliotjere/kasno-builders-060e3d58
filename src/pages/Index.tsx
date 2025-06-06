@@ -8,6 +8,7 @@ import ClientLogos from "../components/ClientLogos";
 import CEOStatement from "../components/CEOStatement";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <CEOStatement />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

@@ -2,6 +2,7 @@
 import Navigation from "../components/Navigation";
 import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const PortfolioPage = () => {
   return (
@@ -11,6 +12,7 @@ const PortfolioPage = () => {
         <Portfolio />
       </div>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
