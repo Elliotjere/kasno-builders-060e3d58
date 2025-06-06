@@ -1,5 +1,5 @@
 
-import { Building } from "lucide-react";
+import { Building, MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,22 +11,36 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/569b53d3-0edb-4e79-9261-643222feee26.png" 
                 alt="Kasno Builders" 
-                className="h-10 w-auto"
+                className="h-15 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
               Building excellence since 2003. Kasno Builders Co. Ltd is your trusted partner 
               for all construction needs, delivering quality projects with integrity and innovation.
             </p>
+            <div className="space-y-2 text-gray-400">
+              <div className="flex items-center gap-2">
+                <MapPin size={16} />
+                <span>Ubungo, Dar es Salaam, Tanzania</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone size={16} />
+                <span>+255 123 456 789</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail size={16} />
+                <span>info@kasnobuilders.co.tz</span>
+              </div>
+            </div>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Commercial Construction</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Residential Building</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Renovation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Infrastructure</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Commercial Construction</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Residential Building</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Renovation</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Infrastructure</a></li>
             </ul>
           </div>
 
@@ -36,7 +50,7 @@ const Footer = () => {
               <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
+              <li><a href="/portfolio" className="hover:text-white transition-colors">Portfolio</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
