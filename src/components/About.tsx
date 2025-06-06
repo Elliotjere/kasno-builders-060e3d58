@@ -1,11 +1,5 @@
-import { CheckCircle, Users, Award, Clock, Building } from "lucide-react";
 
-const stats = [
-  { icon: Building, number: "500+", label: "Projects Completed" },
-  { icon: Users, number: "20+", label: "Years Experience" },
-  { icon: Award, number: "50+", label: "Industry Awards" },
-  { icon: Clock, number: "98%", label: "On-Time Delivery" }
-];
+import { CheckCircle } from "lucide-react";
 
 const About = () => {
   return (
@@ -52,19 +46,6 @@ const About = () => {
               <div className="text-sm">Years of Excellence</div>
             </div>
           </div>
-        </div>
-
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="text-red-600 mb-2 flex justify-center">
-                <stat.icon size={40} />
-              </div>
-              <div className="text-3xl font-bold text-blue-900 mb-1">{stat.number}</div>
-              <div className="text-gray-600">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
