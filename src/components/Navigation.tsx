@@ -49,6 +49,13 @@ const Navigation = () => {
     };
   }, []);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,11 +81,11 @@ const Navigation = () => {
                 className="text-blue-900 hover:text-red-600 transition-colors font-medium flex items-center gap-1"
               >
                 Services
-                <ChevronDown size={16} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown size={16} className={`transition-transform duration-500 ${servicesOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-xl z-50">
+                <div className="absolute top-full left-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-xl z-50 animate-in fade-in duration-500">
                   <div className="p-4">
                     <h3 className="text-lg font-semibold text-blue-900 mb-4">Our Services</h3>
                     <div className="space-y-3">
@@ -103,16 +110,19 @@ const Navigation = () => {
             
             <Link to="/#about" className="text-blue-900 hover:text-red-600 transition-colors font-medium">About</Link>
             <Link to="/portfolio" className="text-blue-900 hover:text-red-600 transition-colors font-medium">Portfolio</Link>
-            <Link to="/#contact" className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium">
+            <button
+              onClick={scrollToContact}
+              className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium"
+            >
               Contact
-            </Link>
+            </button>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-blue-900 hover:text-red-600 p-2 rounded-md border border-gray-200 bg-gray-50 transition-colors"
+              className="text-blue-900 hover:text-red-600 p-2 rounded-md border border-gray-200 bg-gray-50 transition-all duration-500"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -121,15 +131,21 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden animate-in slide-in-from-top duration-700">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <Link to="/" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Home</Link>
               <Link to="/services" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Services</Link>
               <Link to="/#about" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>About</Link>
               <Link to="/portfolio" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Portfolio</Link>
-              <Link to="/#contact" className="w-full text-left bg-red-600 text-white px-3 py-2 rounded-lg hover:bg-red-700 transition-colors mt-2 block" onClick={() => setIsOpen(false)}>
+              <button
+                onClick={() => {
+                  scrollToContact();
+                  setIsOpen(false);
+                }}
+                className="w-full text-left bg-red-600 text-white px-3 py-2 rounded-lg hover:bg-red-700 transition-colors mt-2 block"
+              >
                 Contact
-              </Link>
+              </button>
             </div>
           </div>
         )}
