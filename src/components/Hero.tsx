@@ -5,6 +5,9 @@ import { useState, useEffect } from "react";
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
   
   const backgroundImages = [
     'https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
@@ -13,12 +16,44 @@ const Hero = () => {
     'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
   ];
 
+  const typingWords = ["Dreams", "Future", "Vision"];
+
+  // Background image carousel
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % backgroundImages.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+
+  // Typing effect
+  useEffect(() => {
+    const currentWord = typingWords[currentWordIndex];
+    let timeout: NodeJS.Timeout;
+
+    if (isTyping) {
+      if (displayText.length < currentWord.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentWord.slice(0, displayText.length + 1));
+        }, 150);
+      } else {
+        timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, 2000);
+      }
+    } else {
+      if (displayText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, 100);
+      } else {
+        setCurrentWordIndex((prev) => (prev + 1) % typingWords.length);
+        setIsTyping(true);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isTyping, currentWordIndex, typingWords]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +90,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Building Your <span className="text-red-500">Dreams</span>
+            Building Your <span className="text-red-500">{displayText}<span className="animate-pulse">|</span></span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in">
