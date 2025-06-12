@@ -1,36 +1,36 @@
 
 const clientLogos = [
   {
-    name: "Ministry of Works",
-    logo: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "Government Procurement Service Agency",
+    logo: "/lovable-uploads/6911cd67-eb45-48da-a76e-9118e0991cce.png"
   },
   {
-    name: "Tanzania Roads Authority",
-    logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "Tanzania Revenue Authority",
+    logo: "/lovable-uploads/d26a738d-b143-45e9-9c7a-30c36ad67048.png"
   },
   {
-    name: "Dar es Salaam City Council",
-    logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "TANESCO",
+    logo: "/lovable-uploads/aff456bd-91c9-4da6-879d-305ca40c6445.png"
   },
   {
-    name: "Ministry of Health",
-    logo: "https://images.unsplash.com/photo-1560472355-b83f0fe1a837?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "University of Dar es Salaam",
+    logo: "/lovable-uploads/51e4685a-37aa-4462-88be-76c888c44dd4.png"
   },
   {
-    name: "Tanzania Building Agency",
-    logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "Government Procurement Service Agency",
+    logo: "/lovable-uploads/6911cd67-eb45-48da-a76e-9118e0991cce.png"
   },
   {
-    name: "Ministry of Education",
-    logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "Tanzania Revenue Authority",
+    logo: "/lovable-uploads/d26a738d-b143-45e9-9c7a-30c36ad67048.png"
   },
   {
-    name: "Tanzania Ports Authority",
-    logo: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "TANESCO",
+    logo: "/lovable-uploads/aff456bd-91c9-4da6-879d-305ca40c6445.png"
   },
   {
-    name: "Regional Development Council",
-    logo: "https://images.unsplash.com/photo-1560472355-b83f0fe1a837?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+    name: "University of Dar es Salaam",
+    logo: "/lovable-uploads/51e4685a-37aa-4462-88be-76c888c44dd4.png"
   }
 ];
 
