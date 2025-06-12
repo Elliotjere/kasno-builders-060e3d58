@@ -1,4 +1,3 @@
-
 import { Building, ArrowRight, ArrowUp } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -12,6 +11,7 @@ const Hero = () => {
   const backgroundImages = [
     'https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
     'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    '/lovable-uploads/dbdb7821-0e3e-4f35-b754-f6a61382c72f.png',
     'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
     'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
   ];
