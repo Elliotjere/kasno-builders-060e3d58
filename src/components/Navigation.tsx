@@ -10,28 +10,22 @@ const Navigation = () => {
 
   const services = [
     {
-      name: "Commercial Construction",
-      description: "Complete commercial building solutions from planning to completion"
+      name: "Commercial Construction"
     },
     {
-      name: "Residential Building", 
-      description: "Custom home building and residential developments"
+      name: "Residential Building"
     },
     {
-      name: "Renovation & Remodeling",
-      description: "Transform existing spaces with expert renovation services"
+      name: "Renovation & Remodeling"
     },
     {
-      name: "Infrastructure Development",
-      description: "Roads, bridges, and public infrastructure projects"
+      name: "Infrastructure Development"
     },
     {
-      name: "Project Management",
-      description: "End-to-end project management ensuring timely delivery"
+      name: "Project Management"
     },
     {
-      name: "Site Preparation",
-      description: "Professional site clearing, excavation, and foundation work"
+      name: "Site Preparation"
     }
   ];
 
@@ -81,14 +75,14 @@ const Navigation = () => {
                 className="text-blue-900 hover:text-red-600 transition-colors font-medium flex items-center gap-1"
               >
                 Services
-                <ChevronDown size={16} className={`transition-transform duration-500 ${servicesOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown size={16} className={`transition-transform duration-700 ${servicesOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-xl z-50 animate-in fade-in duration-500">
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white border border-gray-200 rounded-lg shadow-xl z-50 animate-in fade-in duration-700">
                   <div className="p-4">
                     <h3 className="text-lg font-semibold text-blue-900 mb-4">Our Services</h3>
-                    <div className="space-y-3">
+                    <div className="space-y-2">
                       {services.map((service, index) => (
                         <Link
                           key={index}
@@ -99,7 +93,6 @@ const Navigation = () => {
                           <h4 className="font-medium text-gray-900 group-hover:text-red-600 transition-colors">
                             {service.name}
                           </h4>
-                          <p className="text-sm text-gray-600 mt-1">{service.description}</p>
                         </Link>
                       ))}
                     </div>
@@ -122,7 +115,7 @@ const Navigation = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-blue-900 hover:text-red-600 p-2 rounded-md border border-gray-200 bg-gray-50 transition-all duration-500"
+              className="text-blue-900 hover:text-red-600 p-2 rounded-md border border-gray-200 bg-gray-50 transition-all duration-700"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -131,7 +124,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden animate-in slide-in-from-top duration-700">
+          <div className="md:hidden animate-in slide-in-from-top duration-1000">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <Link to="/" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Home</Link>
               <Link to="/services" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Services</Link>
