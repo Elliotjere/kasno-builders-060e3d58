@@ -5,39 +5,91 @@ import { useNavigate } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    title: "Modern Office Complex",
+    title: "GPSA Regional Office Building and Fuel Filling Station",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Commercial"
+    category: "Commercial",
+    client: "Government Procurement Services Agency (GPSA)",
+    location: "Nduluama, Arusha",
+    startDate: "March 2024",
+    completionDate: "April 2025",
+    status: "100% Completed"
   },
   {
     id: 2,
-    title: "Luxury Residential Villa",
-    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Residential"
+    title: "Warehouse at GPSA Headquarters Renovation",
+    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Renovation",
+    client: "Government Procurement Services Agency (GPSA)",
+    location: "Dar es Salaam",
+    startDate: "Feb 2024",
+    completionDate: "Dec 2024",
+    status: "100% Completed"
   },
   {
     id: 3,
-    title: "Shopping Mall Development",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Commercial"
+    title: "Construction of Two in One 2Bedroom Staff HSE",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Residential",
+    client: "Tanzania Revenue Authority",
+    location: "Nakawale-Songea",
+    startDate: "May 2024",
+    completionDate: "Nov 2024",
+    status: "100% Completed"
   },
   {
     id: 4,
-    title: "Bridge Infrastructure",
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Infrastructure"
+    title: "Rehabilitation of Fuel Filling Station at GPSA",
+    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Infrastructure",
+    client: "Government Procurement Services Agency (GPSA)",
+    location: "Kilimanjaro, Singida, Manyara, Geita, Katavi, Morogoro & Shinyanga",
+    startDate: "Jan 2023",
+    completionDate: "Feb 2025",
+    status: "100% Completed"
   },
   {
     id: 5,
-    title: "Hospital Renovation",
-    image: "https://images.unsplash.com/photo-1520637836862-4d197d17c90a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Healthcare"
+    title: "Two Storey Commercial Building at Magore",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Commercial",
+    client: "Leah B. M",
+    location: "Dar es Salaam",
+    startDate: "Sept 2021",
+    completionDate: "Oct 2022",
+    status: "100% Completed"
   },
   {
     id: 6,
-    title: "Educational Campus",
+    title: "Concrete Base, Roofing and Fencing for Transformer",
+    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Infrastructure",
+    client: "TANESCO HQ",
+    location: "Tangeo-Ilala Dar es Salaam",
+    startDate: "Feb 2021",
+    completionDate: "Nov 2021",
+    status: "100% Completed"
+  },
+  {
+    id: 7,
+    title: "Extension of Students' Wings at UDSM Health Centre",
     image: "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    category: "Educational"
+    category: "Educational",
+    client: "University of Dar es Salaam (UDSM)",
+    location: "Dar es Salaam",
+    startDate: "March 2023",
+    completionDate: "Oct 2023",
+    status: "100% Completed"
+  },
+  {
+    id: 8,
+    title: "Construction and Repair of Waste Collection Areas (VIZIMBA)",
+    image: "https://images.unsplash.com/photo-1520637836862-4d197d17c90a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    category: "Infrastructure",
+    client: "University of Dar es Salaam (UDSM)",
+    location: "University of Dar es Salaam",
+    startDate: "April 2023",
+    completionDate: "Jan 2024",
+    status: "100% Completed"
   }
 ];
 
@@ -78,10 +130,24 @@ const Portfolio = () => {
                     {project.category}
                   </span>
                 </div>
+                <div className="absolute top-4 right-4">
+                  <span className="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-medium">
+                    Completed
+                  </span>
+                </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-blue-900 mb-4">{project.title}</h3>
+                <h3 className="text-xl font-bold text-blue-900 mb-2 line-clamp-2">{project.title}</h3>
+                <p className="text-sm text-gray-600 mb-2">
+                  <span className="font-medium">Client:</span> {project.client}
+                </p>
+                <p className="text-sm text-gray-600 mb-2">
+                  <span className="font-medium">Location:</span> {project.location}
+                </p>
+                <p className="text-sm text-gray-600 mb-4">
+                  <span className="font-medium">Duration:</span> {project.startDate} - {project.completionDate}
+                </p>
                 <button 
                   onClick={() => handleViewProject(project.id)}
                   className="bg-blue-900 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition-colors duration-300 flex items-center gap-2"
