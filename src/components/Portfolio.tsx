@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: "GPSA Regional Office Building and Fuel Filling Station",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/5127ce08-46c7-4800-9c82-28167532b551.png",
     category: "Commercial",
     client: "Government Procurement Services Agency (GPSA)",
     location: "Nduluama, Arusha",

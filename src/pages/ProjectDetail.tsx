@@ -6,36 +6,36 @@ import Footer from "../components/Footer";
 
 const projectDetails = {
   "1": {
-    title: "Modern Office Complex",
+    title: "GPSA Regional Office Building and Fuel Filling Station",
     category: "Commercial",
-    description: "A state-of-the-art office complex featuring sustainable design and modern amenities.",
+    description: "A comprehensive project featuring regional office building construction and modern fuel filling station infrastructure for GPSA operations in Arusha.",
     phases: [
       {
-        title: "Site Preparation",
+        title: "Site Development and Infrastructure",
         images: [
-          "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "/lovable-uploads/9377ae2a-8b58-4a6f-91eb-521fcae29bf7.png",
+          "/lovable-uploads/43978a16-f054-4db4-95fc-192ead6a4a2e.png"
         ]
       },
       {
-        title: "Foundation Work",
+        title: "Office Building Construction",
         images: [
-          "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "/lovable-uploads/492dff48-276b-478d-9ef5-975fa7907984.png",
+          "/lovable-uploads/eee193a3-85be-40a7-9d0d-9bb2cdf37052.png"
         ]
       },
       {
-        title: "Structural Construction",
+        title: "Fuel Station Installation",
         images: [
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "/lovable-uploads/ed9aded5-1d0a-4ded-839f-1b5a8d690aea.png",
+          "/lovable-uploads/e15a653d-1e1b-4ce1-bd83-6bb17e6c5721.png"
         ]
       },
       {
         title: "Final Completion",
         images: [
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          "/lovable-uploads/5127ce08-46c7-4800-9c82-28167532b551.png",
+          "/lovable-uploads/8483f39b-b7b9-4512-bec8-608194b24479.png"
         ]
       }
     ]
