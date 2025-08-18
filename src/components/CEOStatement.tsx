@@ -19,7 +19,7 @@ const CEOStatement = () => {
               "At Kasno Builders, we don't just construct buildings; we create lasting legacies. Our commitment to excellence, innovation, and client satisfaction has been the cornerstone of our success for over two decades. Every project we undertake is a testament to our dedication to quality and our vision of transforming communities through exceptional construction."
             </blockquote>
             <div className="text-lg font-semibold text-blue-900">
-              <p>John Kasno</p>
+              <p>Novath Mhagama</p>
               <p className="text-red-600">Chief Executive Officer</p>
             </div>
           </div>
