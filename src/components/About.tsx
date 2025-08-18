@@ -43,7 +43,7 @@ const About = () => {
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1590736969955-71cc94901144?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
               alt="Construction workers and equipment at Kasno Builders project site"
               className="rounded-lg shadow-xl"
             />
