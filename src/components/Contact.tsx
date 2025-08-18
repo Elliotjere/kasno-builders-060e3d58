@@ -46,8 +46,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-                <p className="text-blue-200">+1 (555) 123-4567</p>
-                <p className="text-blue-200">+1 (555) 987-6543</p>
+                <p className="text-blue-200">+255-755151588</p>
+                <p className="text-blue-200">+255-754645535</p>
               </div>
             </div>
 
@@ -57,8 +57,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-                <p className="text-blue-200">info@kasnobuilders.com</p>
-                <p className="text-blue-200">projects@kasnobuilders.com</p>
+                <p className="text-blue-200">kasnobuilders@gmail.com</p>
               </div>
             </div>
 
@@ -68,8 +67,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Address</h3>
-                <p className="text-blue-200">123 Construction Avenue</p>
-                <p className="text-blue-200">Building City, BC 12345</p>
+                <p className="text-blue-200">Plot no. 475, Kisiwani, Ubungo</p>
+                <p className="text-blue-200">P.O.Box 61023, Dar Es Salaam, Tanzania</p>
               </div>
             </div>
           </div>
@@ -159,7 +158,7 @@ const Contact = () => {
           </div>
           <div className="h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7425688705024!2d32.5825197!3d0.3475964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc0f0e7c5555%3A0x7894d54321abc!2sKampala%2C%20Uganda!5e0!3m2!1sen!2s!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.678!2d39.2695!3d-6.8069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184b4a3d5555!2sUbungo%2C%20Dar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2s!4v1234567890"
               width="100%"
               height="100%"
               style={{ border: 0 }}

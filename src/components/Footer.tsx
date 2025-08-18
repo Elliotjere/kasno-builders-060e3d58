@@ -15,28 +15,28 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Building excellence since 2003. Kasno Builders Co. Ltd is your trusted partner 
-              for all construction needs, delivering quality projects with integrity and innovation.
+              Building excellence since 2017. Kasno Builders Company Limited is your trusted partner 
+              for building works, civil engineering, and material supply with integrity and innovation.
             </p>
             <div className="space-y-2 text-gray-400">
               <div className="flex items-center gap-2">
                 <MapPin size={16} />
                 <a 
-                  href="https://maps.google.com/?q=Ubungo,Dar+es+Salaam,Tanzania" 
+                  href="https://maps.google.com/?q=Plot+no.+475,+Kisiwani,+Ubungo,+Dar+Es+Salaam,+Tanzania" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  Ubungo, Dar es Salaam, Tanzania
+                  Plot no. 475, Kisiwani, Ubungo, Dar Es Salaam
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={16} />
-                <span>+255 123 456 789</span>
+                <span>+255-755151588 / +255-754645535</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>info@kasnobuilders.co.tz</span>
+                <span>kasnobuilders@gmail.com</span>
               </div>
             </div>
           </div>
@@ -44,10 +44,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400">
-              <li><Link to="/services" className="hover:text-white transition-colors">Commercial Construction</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Residential Building</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Renovation</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Infrastructure</Link></li>
+              <li><Link to="/services" className="hover:text-white transition-colors">Building Works</Link></li>
+              <li><Link to="/services" className="hover:text-white transition-colors">Civil Engineering Works</Link></li>
+              <li><Link to="/services" className="hover:text-white transition-colors">Supplying of Materials</Link></li>
             </ul>
           </div>
 
@@ -64,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Kasno Builders Co. Ltd. All rights reserved.</p>
+          <p>&copy; 2024 Kasno Builders Company Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>
