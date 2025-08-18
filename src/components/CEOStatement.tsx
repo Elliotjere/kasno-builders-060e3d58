@@ -6,8 +6,8 @@ const CEOStatement = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/3">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-              alt="CEO"
+              src="/lovable-uploads/37d192fa-ef0b-4809-b123-c4b85c07836e.png"
+              alt="John Kasno, CEO of Kasno Builders"
               className="w-64 h-64 rounded-full object-cover mx-auto shadow-xl"
             />
           </div>
