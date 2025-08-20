@@ -38,14 +38,14 @@ const services = [
     title: "Project Management",
     description: "End-to-end project management ensuring timely delivery, quality control, and budget adherence. Our experienced team manages every aspect of your construction project.",
     features: ["Timeline Management", "Quality Control", "Budget Management", "Risk Assessment"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1590856029826-c7d73525bacb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   },
   {
     icon: Shovel,
     title: "Site Preparation",
     description: "Professional site clearing, excavation, and foundation work to prepare for construction projects. We ensure your project starts on solid ground.",
     features: ["Land Clearing", "Excavation", "Foundation Work", "Site Surveying"],
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
   }
 ];
 

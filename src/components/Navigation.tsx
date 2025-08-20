@@ -50,6 +50,13 @@ const Navigation = () => {
     }
   };
 
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,7 +108,12 @@ const Navigation = () => {
               )}
             </div>
             
-            <Link to="/#about" className="text-blue-900 hover:text-red-600 transition-colors font-medium">About</Link>
+            <button
+              onClick={scrollToAbout}
+              className="text-blue-900 hover:text-red-600 transition-colors font-medium"
+            >
+              About
+            </button>
             <Link to="/portfolio" className="text-blue-900 hover:text-red-600 transition-colors font-medium">Portfolio</Link>
             <button
               onClick={scrollToContact}
@@ -128,7 +140,15 @@ const Navigation = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <Link to="/" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Home</Link>
               <Link to="/services" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Services</Link>
-              <Link to="/#about" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>About</Link>
+              <button
+                onClick={() => {
+                  scrollToAbout();
+                  setIsOpen(false);
+                }}
+                className="w-full text-left block px-3 py-2 text-blue-900 hover:text-red-600"
+              >
+                About
+              </button>
               <Link to="/portfolio" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Portfolio</Link>
               <button
                 onClick={() => {
