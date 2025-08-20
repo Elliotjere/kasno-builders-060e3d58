@@ -23,7 +23,7 @@ const Stats = () => {
     },
     {
       icon: Calendar,
-      number: 20,
+      number: 7,
       suffix: "+",
       label: "Years of Experience",
       description: "Two decades of construction excellence",
