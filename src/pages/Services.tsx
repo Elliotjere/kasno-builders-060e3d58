@@ -45,7 +45,7 @@ const services = [
     title: "Site Preparation",
     description: "Professional site clearing, excavation, and foundation work to prepare for construction projects. We ensure your project starts on solid ground.",
     features: ["Land Clearing", "Excavation", "Foundation Work", "Site Surveying"],
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    image: "/lovable-uploads/93d6d21e-ca99-4f23-8f41-22dfaeb36730.png"
   }
 ];
 
