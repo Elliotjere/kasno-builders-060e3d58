@@ -38,7 +38,7 @@ const services = [
     title: "Project Management",
     description: "End-to-end project management ensuring timely delivery, quality control, and budget adherence. Our experienced team manages every aspect of your construction project.",
     features: ["Timeline Management", "Quality Control", "Budget Management", "Risk Assessment"],
-    image: "/lovable-uploads/6106dbae-4f71-4644-8193-cc0fa4aeb6f2.png"
+    image: "/lovable-uploads/34c972a1-1f75-492d-9e3b-ac19958492e8.png"
   },
   {
     icon: Shovel,
