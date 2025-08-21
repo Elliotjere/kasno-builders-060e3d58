@@ -8,7 +8,7 @@ const CEOStatement = () => {
             <img 
               src="/lovable-uploads/37d192fa-ef0b-4809-b123-c4b85c07836e.png"
               alt="John Kasno, CEO of Kasno Builders"
-              className="w-64 h-64 rounded-full object-cover object-top mx-auto shadow-xl"
+              className="w-64 h-64 rounded-full object-cover mx-auto shadow-xl"
             />
           </div>
           <div className="lg:w-2/3">
