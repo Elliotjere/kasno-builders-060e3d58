@@ -5,32 +5,38 @@ const services = [
   {
     icon: Building,
     title: "Commercial Construction",
-    description: "Complete commercial building solutions from planning to completion, including offices, retail spaces, and industrial facilities."
+    description: "Complete commercial building solutions from planning to completion, including offices, retail spaces, and industrial facilities.",
+    image: "/lovable-uploads/51e4685a-37aa-4462-88be-76c888c44dd4.png"
   },
   {
     icon: Construction,
     title: "Residential Construction",
-    description: "Custom home building and residential developments with attention to detail and quality craftsmanship."
+    description: "Custom home building and residential developments with attention to detail and quality craftsmanship.",
+    image: "/lovable-uploads/9377ae2a-8b58-4a6f-91eb-521fcae29bf7.png"
   },
   {
     icon: Hammer,
     title: "Renovation & Remodeling",
-    description: "Transform existing spaces with our expert renovation services, bringing new life to old structures."
+    description: "Transform existing spaces with our expert renovation services, bringing new life to old structures.",
+    image: "/lovable-uploads/37d192fa-ef0b-4809-b123-c4b85c07836e.png"
   },
   {
     icon: Wrench,
     title: "Infrastructure Development",
-    description: "Roads, bridges, and public infrastructure projects built to last with modern engineering standards."
+    description: "Roads, bridges, and public infrastructure projects built to last with modern engineering standards.",
+    image: "/lovable-uploads/43978a16-f054-4db4-95fc-192ead6a4a2e.png"
   },
   {
     icon: Truck,
     title: "Project Management",
-    description: "End-to-end project management ensuring timely delivery, quality control, and budget adherence."
+    description: "End-to-end project management ensuring timely delivery, quality control, and budget adherence.",
+    image: "/lovable-uploads/34c972a1-1f75-492d-9e3b-ac19958492e8.png"
   },
   {
     icon: Shovel,
     title: "Site Preparation",
-    description: "Professional site clearing, excavation, and foundation work to prepare for construction projects."
+    description: "Professional site clearing, excavation, and foundation work to prepare for construction projects.",
+    image: "/lovable-uploads/6106dbae-4f71-4644-8193-cc0fa4aeb6f2.png"
   }
 ];
 
@@ -52,13 +58,23 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden"
             >
-              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <service.icon size={48} />
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <service.icon size={32} />
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">{service.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-blue-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              </div>
             </div>
           ))}
         </div>
