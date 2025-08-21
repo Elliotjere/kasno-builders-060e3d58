@@ -15,7 +15,7 @@ const Stats = () => {
   const stats = [
     {
       icon: Building,
-      number: 500,
+      number: 30,
       suffix: "+",
       label: "Projects Completed",
       description: "Successfully delivered projects across Tanzania",
