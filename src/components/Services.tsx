@@ -1,42 +1,48 @@
 
 import { Building, Hammer, Wrench, Truck, Construction, Shovel } from "lucide-react";
+import commercialConstruction from "../assets/commercial-construction.jpg";
+import residentialConstruction from "../assets/residential-construction.jpg";
+import renovationRemodeling from "../assets/renovation-remodeling.jpg";
+import infrastructureDevelopment from "../assets/infrastructure-development.jpg";
+import projectManagement from "../assets/project-management.jpg";
+import sitePreparation from "../assets/site-preparation.jpg";
 
 const services = [
   {
     icon: Building,
     title: "Commercial Construction",
     description: "Complete commercial building solutions from planning to completion, including offices, retail spaces, and industrial facilities.",
-    image: "/lovable-uploads/51e4685a-37aa-4462-88be-76c888c44dd4.png"
+    image: commercialConstruction
   },
   {
     icon: Construction,
     title: "Residential Construction",
     description: "Custom home building and residential developments with attention to detail and quality craftsmanship.",
-    image: "/lovable-uploads/9377ae2a-8b58-4a6f-91eb-521fcae29bf7.png"
+    image: residentialConstruction
   },
   {
     icon: Hammer,
     title: "Renovation & Remodeling",
     description: "Transform existing spaces with our expert renovation services, bringing new life to old structures.",
-    image: "/lovable-uploads/37d192fa-ef0b-4809-b123-c4b85c07836e.png"
+    image: renovationRemodeling
   },
   {
     icon: Wrench,
     title: "Infrastructure Development",
     description: "Roads, bridges, and public infrastructure projects built to last with modern engineering standards.",
-    image: "/lovable-uploads/43978a16-f054-4db4-95fc-192ead6a4a2e.png"
+    image: infrastructureDevelopment
   },
   {
     icon: Truck,
     title: "Project Management",
     description: "End-to-end project management ensuring timely delivery, quality control, and budget adherence.",
-    image: "/lovable-uploads/34c972a1-1f75-492d-9e3b-ac19958492e8.png"
+    image: projectManagement
   },
   {
     icon: Shovel,
     title: "Site Preparation",
     description: "Professional site clearing, excavation, and foundation work to prepare for construction projects.",
-    image: "/lovable-uploads/6106dbae-4f71-4644-8193-cc0fa4aeb6f2.png"
+    image: sitePreparation
   }
 ];
 
