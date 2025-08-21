@@ -94,7 +94,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in">
-            Professional construction services with over 20 years of excellence in delivering quality projects on time and within budget.
+            Professional construction services with over 7 years of excellence in delivering quality projects on time and within budget.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">

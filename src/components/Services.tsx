@@ -34,8 +34,8 @@ const services = [
   },
   {
     icon: Truck,
-    title: "Project Management",
-    description: "End-to-end project management ensuring timely delivery, quality control, and budget adherence.",
+    title: "Supply of Building Materials",
+    description: "High-quality construction materials sourced from trusted suppliers to ensure project success and durability.",
     image: projectManagement
   },
   {
