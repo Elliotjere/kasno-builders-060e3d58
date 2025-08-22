@@ -49,11 +49,11 @@ const projects = [
   },
   {
     id: 5,
-    title: "Two Storey Commercial Building at Magore",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    title: "Two Storey Commercial Building at Ubungo-DSM",
+    image: "/lovable-uploads/27e31aee-eaa9-45cd-abd3-07607cedf80c.png",
     category: "Commercial",
     client: "Leah B. M",
-    location: "Dar es Salaam",
+    location: "Ubungo, Dar es Salaam",
     startDate: "Sept 2021",
     completionDate: "Oct 2022",
     status: "100% Completed"

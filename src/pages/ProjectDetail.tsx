@@ -39,6 +39,40 @@ const projectDetails = {
         ]
       }
     ]
+  },
+  "5": {
+    title: "Two Storey Commercial Building at Ubungo-DSM",
+    category: "Commercial",
+    description: "Modern two-storey commercial building featuring contemporary design and quality construction in Ubungo area of Dar es Salaam.",
+    phases: [
+      {
+        title: "Foundation and Site Preparation",
+        images: [
+          "/lovable-uploads/46f8717a-221d-45d9-97cb-11d150648a01.png",
+          "/lovable-uploads/d46895e5-d32c-4015-9aad-a6c76727ee51.png"
+        ]
+      },
+      {
+        title: "Structural Framework",
+        images: [
+          "/lovable-uploads/e33fa39d-8046-447c-b3dc-1f8102066930.png"
+        ]
+      },
+      {
+        title: "Building Completion",
+        images: [
+          "/lovable-uploads/27e31aee-eaa9-45cd-abd3-07607cedf80c.png",
+          "/lovable-uploads/a4c4bf37-fdd6-4e93-8a70-f7781c9ec0ac.png"
+        ]
+      },
+      {
+        title: "Final Details and Finishing",
+        images: [
+          "/lovable-uploads/22152eb0-a0e0-4b28-b411-080ff94dd75f.png",
+          "/lovable-uploads/dd157f07-d154-47d8-b1fd-982bd19d3ea2.png"
+        ]
+      }
+    ]
   }
   // Add more projects as needed
 };
