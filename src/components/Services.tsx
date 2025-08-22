@@ -1,7 +1,6 @@
 
 import { Building, Hammer, Wrench, Truck, Construction, Shovel } from "lucide-react";
 import commercialConstruction from "../assets/commercial-construction.jpg";
-import residentialConstruction from "../assets/residential-construction.jpg";
 import renovationRemodeling from "../assets/renovation-remodeling.jpg";
 import infrastructureDevelopment from "../assets/infrastructure-development.jpg";
 import projectManagement from "../assets/project-management.jpg";
@@ -18,7 +17,7 @@ const services = [
     icon: Construction,
     title: "Residential Construction",
     description: "Custom home building and residential developments with attention to detail and quality craftsmanship.",
-    image: residentialConstruction
+    image: "/lovable-uploads/85a03792-31ad-44a8-9ccc-7494e791e97d.png"
   },
   {
     icon: Hammer,
