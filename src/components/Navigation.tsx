@@ -97,7 +97,7 @@ const Navigation = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-blue-900 hover:text-red-600 transition-colors font-medium">Home</Link>
+            <Link to="/" className={`transition-colors font-medium ${location.pathname === '/' ? 'text-red-600' : 'text-blue-900 hover:text-red-600'}`}>Home</Link>
             
             {/* Services Dropdown */}
             <div className="relative" ref={dropdownRef}>
@@ -118,7 +118,7 @@ const Navigation = () => {
                         <Link
                           key={index}
                           to="/services"
-                          className="block p-3 rounded-lg hover:bg-gray-50 transition-colors group"
+                          className={`block p-3 rounded-lg hover:bg-gray-50 transition-colors group ${location.pathname === '/services' ? 'bg-red-50' : ''}`}
                           onClick={() => setServicesOpen(false)}
                         >
                           <h4 className="font-medium text-gray-900 group-hover:text-red-600 transition-colors">
@@ -138,7 +138,7 @@ const Navigation = () => {
             >
               About
             </button>
-            <Link to="/portfolio" className="text-blue-900 hover:text-red-600 transition-colors font-medium">Portfolio</Link>
+            <Link to="/portfolio" className={`transition-colors font-medium ${location.pathname === '/portfolio' ? 'text-red-600' : 'text-blue-900 hover:text-red-600'}`}>Portfolio</Link>
             <button
               onClick={scrollToContact}
               className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors font-medium"
@@ -162,8 +162,8 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden animate-in slide-in-from-top duration-1000">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <Link to="/" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Home</Link>
-              <Link to="/services" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Services</Link>
+              <Link to="/" className={`block px-3 py-2 hover:text-red-600 ${location.pathname === '/' ? 'text-red-600' : 'text-blue-900'}`} onClick={() => setIsOpen(false)}>Home</Link>
+              <Link to="/services" className={`block px-3 py-2 hover:text-red-600 ${location.pathname === '/services' ? 'text-red-600' : 'text-blue-900'}`} onClick={() => setIsOpen(false)}>Services</Link>
               <button
                 onClick={() => {
                   scrollToAbout();
@@ -173,7 +173,7 @@ const Navigation = () => {
               >
                 About
               </button>
-              <Link to="/portfolio" className="block px-3 py-2 text-blue-900 hover:text-red-600" onClick={() => setIsOpen(false)}>Portfolio</Link>
+              <Link to="/portfolio" className={`block px-3 py-2 hover:text-red-600 ${location.pathname === '/portfolio' ? 'text-red-600' : 'text-blue-900'}`} onClick={() => setIsOpen(false)}>Portfolio</Link>
               <button
                 onClick={() => {
                   scrollToContact();

@@ -1,5 +1,6 @@
 import { Building, ArrowRight, ArrowUp } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -106,12 +107,12 @@ const Hero = () => {
               <ArrowRight size={20} />
             </a>
             
-            <a 
-              href="/portfolio"
+            <Link 
+              to="/portfolio"
               className="border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
             >
               View Our Work
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/569b53d3-0edb-4e79-9261-643222feee26.png" 
                 alt="Kasno Builders" 
-                className="h-14 w-auto"
+                className="h-24 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
