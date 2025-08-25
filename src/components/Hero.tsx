@@ -81,7 +81,10 @@ const Hero = () => {
               className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
                 index === currentSlide ? 'opacity-40' : 'opacity-0'
               }`}
-              style={{ backgroundImage: `url('${image}')` }}
+              style={{ 
+                backgroundImage: `url('${image}')`,
+                backgroundPosition: 'center 30%'
+              }}
             />
           ))}
         </div>
