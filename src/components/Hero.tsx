@@ -10,7 +10,12 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true);
   
   const backgroundImages = [
-    '/lovable-uploads/1411a3af-97a0-4d5e-b45c-ac7ad2ed81d7.png'
+    'https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    '/lovable-uploads/dbdb7821-0e3e-4f35-b754-f6a61382c72f.png',
+    '/lovable-uploads/ebd3c82b-40cc-4ec9-ab1f-5e056ea5c061.png',
+    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80'
   ];
 
   const typingWords = ["Dreams", "Future", "Vision"];
@@ -76,10 +81,7 @@ const Hero = () => {
               className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
                 index === currentSlide ? 'opacity-40' : 'opacity-0'
               }`}
-              style={{ 
-                backgroundImage: `url('${image}')`,
-                backgroundPosition: 'center 30%'
-              }}
+              style={{ backgroundImage: `url('${image}')` }}
             />
           ))}
         </div>
