@@ -10,6 +10,7 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true);
   
   const backgroundImages = [
+    '/lovable-uploads/6c5b6512-d90e-4f9a-a3c5-13fdc92a5071.png',
     'https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
     'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
     '/lovable-uploads/dbdb7821-0e3e-4f35-b754-f6a61382c72f.png',
