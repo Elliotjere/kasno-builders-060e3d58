@@ -26,7 +26,7 @@ const About = () => {
             
             <div className="space-y-4">
               {[
-                "CRB Class 5 Building Contractor",
+                "CRB Class 2 Building Contractor",
                 "CRB Class 6 Civil Works Contractor", 
                 "TRA Registered (TIN: 138-959-719)",
                 "Full VAT Registration (40-037231-A)",
